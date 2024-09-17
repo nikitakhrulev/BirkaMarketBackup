@@ -1,0 +1,37 @@
+.nav-list__item {
+    padding-bottom: 10px;
+}
+.dropdown-item{
+    position: relative;
+    // padding-bottom: 10px;
+
+    &:hover {
+        .sub-nav {
+            display: block;
+            
+        }
+        .production-arrow {
+            opacity: 0.4;
+            transition: 0.2s ease-in;
+        }
+    }
+    img {
+        transform: translate(0%, 10%);
+    }
+}
+.sub-nav {
+    margin-top: 10px;
+    position: absolute;
+
+    background-color: var(--review-background);
+    border-radius: 10px;
+}
+.sub-nav__list {
+    padding: 20px 24px;
+    
+    display: grid;
+    gap: 10px;
+}
+.nav__link {
+    padding-bottom: 10px;
+}

@@ -1,0 +1,233 @@
+// .container {
+//     max-width: 1210px;
+//     padding: 0 15px;
+//     margin: 0 auto;
+// }
+.swiper-button-next,
+.swiper-button-prev {
+  color: #fff;
+}
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    border-radius: 10px;
+
+    margin-bottom: 0;
+    // &:hover {
+    //     border: 2px solid red;
+    // }
+  }
+
+  .mySwiper .swiper-slide {
+    height: 25%;
+    width: 100%;
+    opacity: 0.4;
+  }
+
+  .mySwiper .swiper-slide-thumb-active {
+    opacity: 1;
+  }
+
+  .swiper-container {
+    display: flex;
+    width: 100%;
+    height: 500px;
+  }
+
+  .mySwiper2 {
+    width: 80%;
+    height: 100%;
+    margin-right: 20px; /* Добавлено расстояние между слайдерами */
+
+    position: relative;
+  }
+
+  .mySwiper {
+    width: 20%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // flex-direction: column;
+  }
+
+
+  .portfolio-slider {
+
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // height: 100vh;
+  }
+
+  #slider__left-arrow {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 1;
+    
+    transform: translate(20%, -50%);
+
+    background-color: var(--review-background);
+    border-radius: 1000px;
+
+    padding: 12px;
+  }
+  #slider__right-arrow {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    z-index: 1;
+    
+    transform: translate(-20%, -50%);
+
+    background-color: var(--review-background);
+    border-radius: 1000px;
+
+    padding: 12px;
+  }
+  @media (max-width: 768px) {
+    .swiper-container {
+      flex-direction: column;
+      gap: 16px;
+      // height: 366px!important;
+      height: auto;
+    }
+  
+    .mySwiper2 {
+      width: 100%;
+      height: auto;
+      margin-right: 0;
+    }
+  
+    .mySwiper {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: row;
+      overflow-x: auto;
+    }
+  
+    .mySwiper .swiper-slide {
+      height: auto;
+      width: auto;
+      flex: 0 0 auto;
+      margin-right: 10px; /* Добавим небольшой отступ между миниатюрами */
+    }
+  
+    #slider__left-arrow,
+    #slider__right-arrow {
+      display: none;
+    }
+  }
+
+  
+/* Стили для первого слайдера */
+.swiper-hero-container .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+
+.swiper-hero-container {
+  overflow: hidden;
+
+  margin-bottom: 24px;
+}
+.swiper-hero-container .swiper-slide {
+  // display: flex;
+  flex-direction: column;
+  // text-align: start!important;
+}
+.menu__slide-heading {
+  align-self: start;
+}
+/* Стили для второго слайдера */
+// .portfolio-slider-container .swiper-button-next,
+// .portfolio-slider-container .swiper-button-prev {
+//   color: #fff;
+// }
+
+// .portfolio-slider-container .swiper-slide img {
+//   display: block;
+//   width: 100%;
+//   height: 100%;
+//   object-fit: cover;
+//   border-radius: 10px;
+// }
+
+// .portfolio-slider-container .mySwiper .swiper-slide {
+//   height: 25%;
+//   width: 100%;
+//   opacity: 0.4;
+// }
+
+// .portfolio-slider-container .mySwiper .swiper-slide-thumb-active {
+//   opacity: 1;
+// }
+
+// .portfolio-slider-container .swiper-container {
+//   display: flex;
+//   width: 100%;
+//   height: 500px;
+// }
+
+// .portfolio-slider-container .mySwiper2 {
+//   width: 80%;
+//   height: 100%;
+//   margin-right: 20px; /* Добавлено расстояние между слайдерами */
+//   position: relative;
+// }
+
+// .portfolio-slider-container .mySwiper {
+//   width: 20%;
+//   height: 100%;
+// }
+
+// .portfolio-slider-container .swiper-slide {
+//   text-align: center;
+//   font-size: 18px;
+//   background: #fff;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
+
+// .portfolio-slider-container #slider__left-arrow {
+//   position: absolute;
+//   top: 50%;
+//   left: 0;
+//   z-index: 1;
+//   transform: translate(20%, -50%);
+//   background-color: var(--review-background);
+//   border-radius: 1000px;
+//   padding: 12px;
+// }
+
+// .portfolio-slider-container #slider__right-arrow {
+//   position: absolute;
+//   top: 50%;
+//   right: 0;
+//   z-index: 1;
+//   transform: translate(-20%, -50%);
+//   background-color: var(--review-background);
+//   border-radius: 1000px;
+//   padding: 12px;
+// }
+

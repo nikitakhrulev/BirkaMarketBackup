@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="изготовление бирок для одежды, изготовление бирок с логотипом, бирки на заказ Москва, заказать бирки на одежду Москва, бирки с лейблом заказать Москва, бирки жаккардовые на одежду Москва, бирки хлопковые нашивные заказать Москва, бирки картонные на заказ, бирки нейлоновые заказать Москва, купить нашивные бирки, купить пришивные бирки на одежду, бирки нашивные на одежду Москва, бирки со своим логотипом Москва, заказ бирок Москва, бирки качественно Москва">
+    <meta name="description" content="Изготовление бирок и этикеток с логотипом в Москве - Birka Market">
+    <script src="./js/inputmask.min.js"></script>
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./scss/main.css">
+    <title>Birka Market</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./img/favicon/site.webmanifest">
+</head>
+<body>
+<!-- Yandex.Metrika counter --> 
+<script type="text/javascript" > 
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; 
+    m[i].l=1*new Date(); 
+    for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }} 
+    k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) 
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); 
+  
+    ym(97712262, "init", { 
+         clickmap:true, 
+         trackLinks:true, 
+         accurateTrackBounce:true 
+    }); 
+ </script> 
+ <noscript><div><img src="https://mc.yandex.ru/watch/97712262" style="position:absolute; left:-9999px;" alt="" /></div></noscript> 
+ <!-- /Yandex.Metrika counter -->
+    <header class="header">
+        <div class="container">
+            <div class="header__row">
+                <div class="header__logo">
+                    <p>birka market</p>
+                </div>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__list-item dropdown-item"><a href="./pages/menu.html" class="nav__link">Продукция <span class="production-arrow"><img src="./img/icons/small-chevron-down.svg" alt="" class="production-arrow__img"></span></a>
+                            <div class="sub-nav hidden">
+                                <ul class="sub-nav__list">
+                                    <li class="sub-nav__item"><a href="./pages/zhakkard.html" class="sub-nav__link">Жаккард</a></li>
+                                    <li class="sub-nav__item"><a href="./pages/silicon.html" class="sub-nav__link">Силикон</a></li>
+                                    <li class="sub-nav__item"><a href="./pages/neylon.html" class="sub-nav__link">Нейлон</a></li>
+                                    <li class="sub-nav__item"><a href="./pages/satin.html" class="sub-nav__link">Сатин</a></li>
+                                    <li class="sub-nav__item"><a href="./pages/karton.html" class="sub-nav__link">Картон</a></li>
+                                    <li class="sub-nav__item"><a href="./pages/cotton.html" class="sub-nav__link">Хлопок</a></li>
+                                </ul>
+                            </div>
+                        
+                        </li>
+                        <li class="nav__list-item"><a href="./pages/contacts.html" class="nav__link">Контакты</a></li>
+                        <li class="nav__list-item"><a href="./pages/delivery.html" class="nav__link">Доставка</a></li>
+                    </ul>
+                </nav>
+                <div class="header__phone">
+                    <img src="./img/icons/header-phone.svg" alt="phone-icon">
+                    <a href="tel:8 (495) 003-88-81" class="header__phone-number">8 (495) 003-88-81</a>
+                </div>
+            </div>
+            </div>
+            <div class="mobile-header__wrapper hidden">
+                <div class="container">
+                    <div class="mobile-header-row">
+                        <div class="header__logo">
+                            <p>birka market</p>
+                        </div>
+                        <div class="mobile-menu-open">
+                            <img src="./img/icons/mobile/burger.svg" alt="burger-icon" id='mobileBtnImg'> 
+                        </div>
+                    </div>
+                    <div class="mobile-nav hidden">
+                        <div class="mobile-nav__wrapper">
+                            <ul class="mobile-nav__list">
+                                <li class="mobile-nav__item mobile-production">
+                                <div class="production-dropdown">
+                                    <p>Продукция</p>
+                                    <img src="./img/icons/small-chevron-down.svg" alt="menu-arrow" class="mobile-production-arrow">
+                                </div>
+                                    <div class="mobile-production__list-wrapper hidden">
+                                        <ul class="mobile-production__list">
+                                            <li class="mobile-production__item"><a href="./pages/zhakkard.html">Жаккард</a></li>
+                                            <li class="mobile-production__item"><a href="./pages/silicon.html">Силикон</a></li>
+                                            <li class="mobile-production__item"><a href="./pages/satin.html">Сатин</a></li>
+                                            <li class="mobile-production__item"><a href="./pages/karton.html">Картон</a></li>
+                                            <li class="mobile-production__item"><a href="./pages/neylon.html">Нейлон</a></li>
+                                            <li class="mobile-production__item"><a href="./pages/cotton.html">Хлопок</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="mobile-nav__item"><a href="./pages/contacts.html">Контакты</a></li>
+                                <li class="mobile-nav__item"><a href="./pages/delivery.html">Доставка</a></li>
+                            </ul>
+                            <a href="tel:8 (495) 003-88-81" class="footer__phone">8 (495) 003-88-81</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="header__hero">
+                    <div class="header__hero-text">
+                        <p class="hero__heading">birka<br>market</p>
+                        <div class="hero__description">
+                            <h1>Производство бирок и этикеток<br>высокого качества</h1>
+                        </div>
+                    </div>
+                    <div class="header__hero-image">
+                        <img src="./img/main2.jpg" alt="main-image" id="hero-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="menu">
+            <div class="container">
+                <div class="menu__header">
+                    <h2 class="section-heading">каталог</h2>
+                    <div class="swiper__buttons">
+                        <img src="./img/icons/Left.svg" alt="левая стрелка" id="menu__left-arrow">
+                        <img src="./img/icons/Right.svg" alt="правая стрелка" id="menu__right-arrow">
+                    </div>
+                </div>
+                <div class="swiper-hero-container">
+                    <div class="swiper-hero">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide swiper-slide-menu">
+                          <a href="./pages/zhakkard.html" class="hero-slider-item">
+                              <img src="./img/menu-slider/menuslider1.jpg" alt="жаккард">
+                              <h4 class="menu__slide-heading">Жаккард</h4>
+                          </a>  
+                        </div>
+                        <div class="swiper-slide swiper-slide-menu">
+                            <a href="./pages/satin.html" class="hero-slider-item">
+                                <img src="./img/menu-slider/menuslider5.jpg" alt="сатин">
+                                <h4 class="menu__slide-heading">Сатин</h4>
+                            </a>  
+                          </div>
+                          <div class="swiper-slide swiper-slide-menu">
+                            <a href="./pages/karton.html" class="hero-slider-item">
+                                <img src="./img/menu-slider/menuslider3.jpg" alt="картон">
+                                <h4 class="menu__slide-heading">Картон</h4>
+                            </a>  
+                          </div>
+                        <div class="swiper-slide swiper-slide-menu">
+                            <a href="./pages/silicon.html" class="hero-slider-item">
+                                <img src="./img/menu-slider/menuslider2.jpg" alt="силикон">
+                                <h4 class="menu__slide-heading">Силикон</h4>
+                            </a>  
+                        </div>
+                        <div class="swiper-slide swiper-slide-menu">
+                            <a href="./pages/cotton.html" class="hero-slider-item">
+                                <img src="./img/menu-slider/menuslider6.jpg" alt="хлопок">
+                                <h4 class="menu__slide-heading">Хлопок</h4>
+                            </a>  
+                          </div>
+                          <div class="swiper-slide swiper-slide-menu">
+                            <a href="./pages/neylon.html" class="hero-slider-item">
+                                <img src="./img/menu-slider/menuslider4.jpg" alt="нейлон">
+                                <h4 class="menu__slide-heading">Нейлон</h4>
+                            </a>  
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu__button">
+                    <a href="./pages/menu.html"><button>Перейти в каталог</button></a>
+                  </div>                  
+            </div>
+        </section>
+
+        <section class="reviews">
+            <div class="container">
+                <h2 class="section-heading section-heading--additional">Отзывы</h2>
+                <ul class="reviews__list">
+                    <li class="reviews__list-item">
+                        <div class="review__content">
+                            <h4 class="review__name">оксана д.</h4>
+                            <p class="review__text">
+                                Лейблы отлично подошли для моего бренда, материал подбирали в офисе вместе с ребятами) 
+                                Составники тоже выполнены на высшем уровне, информация легко читается. Понравилось отношение и внимание к клиенту! 
+                                Спасибо бирка маркет, будем сотрудничать с удовольствием 🔥🔥🔥
+                            </p>
+                        </div>
+                        <div class="review__decor">
+                            <img src="./img/icons/review.svg" alt="review-decor">
+                        </div>
+                    </li>
+                    <li class="reviews__list-item">
+                        <div class="review__content">
+                            <h4 class="review__name">Инкогнито 4885</h4>
+                            <p class="review__text">Сотрудничество с этой компанией стало настоящим открытием для моего бренда. 
+                                Бирки получились стильными и качественными, что очень положительно сказалось на имидже нашей одежды. 
+                                Также хочу отметить дружелюбный подход сотрудников и готовность помочь с любыми вопросами. 
+                                Спасибо за отличную работу!</p>
+                        </div>
+                        <div class="review__decor">
+                            <img src="./img/icons/review.svg" alt="review-decor">
+                        </div>
+                    </li>
+                    <li class="reviews__list-item">
+                        <div class="review__content">
+                            <h4 class="review__name">Роман Р.</h4>
+                            <p class="review__text">Жена заказывала сатиновые бирки. 
+                                Все сделали быстро, качественно нанесли рисунок, все четко. Бирки прошли испытания стиркой - краска осталась на месте.
+                                Ребята делали тестовый образец перед созданием партии. Благодарю их за внимательное отношение к клиентам!</p>
+                        </div>
+                        <div class="review__decor">
+                            <img src="./img/icons/review.svg" alt="review-decor">
+                        </div>
+                    </li>
+                </ul>
+                <div class="reviews__button">
+                    <a href="https://yandex.ru/maps/org/birkamarket/242141870878/reviews/?ll=37.436238%2C55.838020&mode=search&sctx=ZAAAAAgBEAAaKAoSCZ5eKcsQz0JAEdOgaB7A4EtAEhIJJ4i6D0Cq9T8RaW%2FwhclU4D8iBgABAgMEBSgKOABA1QFIAWIocmVsZXZfaXJyZWxfZmlsdGVyPWNvbnZleW9yX2lycmVsXzQ2Njc1OGI1cmVhcnI9c2NoZW1lX0xvY2FsL0dlby9Qb3N0ZmlsdGVyL0lycmVsVGhyZXNob2xkPTAuMTViPHJlYXJyPXNjaGVtZV9Mb2NhbC9HZW8vUG9zdGZpbHRlci9EZWNpZGVUaHJlc2hvbGRCeVJ1YnI9dHJ1ZWJFcmVhcnI9c2NoZW1lX0xvY2FsL0dlby9Qb3N0ZmlsdGVyL0lycmVsUnVicmljVGhyZXNob2xkRm9yRm9ybXVsYT0wLjIwagJydZ0BzcxMPaABAKgBAL0B0kCVJ8IBBp72noaGB4ICDGJpcmthIG1hcmtldIoCAJICAJoCDGRlc2t0b3AtbWFwcw%3D%3D&sll=37.436238%2C55.838020&sspn=0.021157%2C0.007957&tab=reviews&text=birka%20market&z=16"><button>Смотреть больше отзывов</button></a>
+                </div>
+            </div>
+        </section>
+        <section class="contactUs">
+            <div class="container">
+              <div class="contactUs-wrapper">
+                <div class="contactUs-text">
+                  <h3 class="section-heading contactUs__heading">Есть вопрос?</h3>
+                  <p>чтобы получить консультацию или задать<br>
+                    интересующий вас вопрос, свяжитесь с нами через форму</p>
+                </div>
+                <div class="contact__show-modal">
+                  <button class="contactUsBtn" id="contactUsBtn">Связаться с нами</button>
+                </div>
+                <p class="contact__other-name">или другим удобным способом</p>
+                <ul class="contact-socials-list">
+                  <li class="contact-socials-list__item">
+                    <a href="https://t.me/Gbirka"><img src="./img/contact/telegram.svg" alt="telegram"></a>
+                  </li>
+                  <li class="contact-socials-list__item">
+                    <a href="https://wa.me/79163549287?text=%D0%9F%D1%80%D0%B8%D0%B2%D0%B5%D1%82!%20%F0%9F%91%8B%20%D0%9C%D0%B5%D0%BD%D1%8F%20%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%B5%D1%81%D1%83%D0%B5%D1%82"><img src="./img/contact/whatsapp.svg" alt="whatsapp"></a>
+                  </li>
+                  <li class="contact-socials-list__item">
+                    <a href="tel:8 (495) 003-88-81"><img src="./img/contact/phone.svg.svg" alt="phone" class="contact-img"></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="contactUsModal hidden" id="contactUsModal">
+                <div class="contactUs-modal__content">
+                  <span class="contactUs-modal__close">&times;</span>
+                  <div class="contactUs-form__wrapper">
+                    <div class="contactUs-modal__content-desc">
+                      <h3 class="section-heading contactUs-heading">Что нам нужно знать?</h3>
+                      <p>Напишите свои контактные данные и то, что вы хотите узнать</p>
+                    </div>
+                    <div class="contactUs-modal__content-form__wrapper">
+                      <form action="https://api.web3forms.com/submit" method="POST" class="contactUs-modal__content-form" id="contact-form">
+                        <input type="hidden" name="access_key" value="82bddbdc-9709-4b3a-b577-228ba397ea31">
+                        <input type="hidden" name="redirect" value="https://birka-market.ru/pages/redirect.html">
+                        <div>
+                            <input type="text" placeholder="Имя" class="form__input _req" id="name" name="name">
+                        </div>
+                        <div>
+                            <input type="email" placeholder="Email" class="form__input _req _email" id="email" name="email">
+                        </div>
+                        <div>
+                            <input type="text" placeholder="+7(___)___-__-__" class="calculate-phone" id="feedback-phone-input" name="Телефон" autocomplete="off">
+                        </div>
+                        <div>
+                            <input type="text" name="question" id="question" placeholder="Ваш вопрос" class="form__input _req">
+                        </div>
+                        <div class="feedback__validation">
+                            <label>
+                              <input type="checkbox" id="validate-checkbox" class="real-checkbox">
+                              <span class="custom-checkbox"></span>
+                              Я согласен(а) с <a href="./pages/privacy.html">политикой конфиденциальности</a> и даю <a href="#!">согласие</a> на обработку данных</label>
+                          </div>
+                        <div class="contactUs-submit__btn">
+                          <button type="submit">Связаться с нами</button>
+                        </div>
+                      </form>
+                      
+                    </div>
+                  </div>
+                  </div>
+              </div>
+            </div>
+          </section>
+    </main>
+    <footer class="footer">
+        <div class="desktop-footer">
+            <div class="container">
+                <div class="footer__wrapper">
+                    <div class="footer__bio">
+                        <div class="footer__logo">
+                            <a href="./index.html">BIRKA<br> MARKET</a>
+                        </div>
+                        <div class="footer__desc">
+                            <p>Изготовление бирок на заказ</p>
+                        </div>
+                        <!-- <div class="footer__req">
+                            <p>ИП Федотов А.В.</p>
+                            <p>ИНН 771412910075</p>
+                            <p>ОГРНИП 323774600620762</p>
+                        </div> -->
+                    </div>
+                    <div class="footer__production">
+                        <h4 class="footer__list-heading">Продукция</h4>
+                        <ul class="footer__production-list footer__list">
+                            
+                            <li class="footer__production-list__item"><a href="./pages/satin.html" class="footer__production-link">Сатин</a></li>
+                            <li class="footer__production-list__item"><a href="./pages/cotton.html" class="footer__production-link">Хлопок</a></li>
+                            <li class="footer__production-list__item"><a href="./pages/karton.html" class="footer__production-link">Картон</a></li>
+                            <li class="footer__production-list__item"><a href="./pages/silicon.html" class="footer__production-link">Силикон</a></li>
+                            <li class="footer__production-list__item"><a href="./pages/neylon.html" class="footer__production-link">Нейлон</a></li>
+                            <li class="footer__production-list__item"><a href="./pages/zhakkard.html" class="footer__production-link">Жаккард</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__nav">
+                        <h4 class="footer__list-heading">Навигация</h4>
+                        <ul class="footer__nav-list footer__list">
+                            <li class="footer__nav-list__item"><a href="./pages/delivery.html" class="footer__nav-link">Доставка</a></li>
+                            <li class="footer__nav-list__item"><a href="./pages/contacts.html" class="footer__nav-link">Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__contacts">
+                        <h4 class="footer__list-heading">Контакты</h4>
+                        <ul class="footer__contacts-list footer__list">
+                            <li class="footer__production-list__item footer__address">
+                                <p>125363, г. Москва</p>
+                                <p>Строительный проезд,</p>
+                                <p>д. 2, стр. 1</p>
+                            </li>
+                            <li class="footer__production-list__item"><p>пн-пт 10:00 – 20:00</p></li>
+                            <li class="footer__production-list__item footer__mail-phone">
+                                <a href="tel:8 (495) 003-88-81" class="footer__phone">8 (495) 003-88-81</a>
+                                <a href="mailto:123@gmail.com">BirkaMarket@yandex.ru</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-footer hidden">
+            <div class="container">
+                <div class="footer__logo">
+                    <a href="./index.html">BIRKA<br> MARKET</a>
+                </div>
+                <div class="footer__desc">
+                    <p>Изготовление бирок на заказ</p>
+                </div>
+                <!-- <div class="footer__req">
+                    <p>ИП Федотов А.В.</p>
+                    <p>ИНН 771412910075</p>
+                    <p>ОГРНИП 323774600620762</p>
+                </div> -->
+                <div class="footer__contacts">
+                    <h4 class="footer__list-heading">Контакты</h4>
+                    <ul class="footer__contacts-list footer__list">
+                        <li class="footer__production-list__item footer__address">
+                            <p>125363, г. Москва</p>
+                            <p>Строительный проезд,</p>
+                            <p>д. 2, стр. 1</p>
+                        </li>
+                        <li class="footer__production-list__item"><p>пн-пт 10:00 – 20:00</p></li>
+                        <li class="footer__production-list__item footer__mail-phone">
+                            <a href="tel:8 (495) 003-88-81" class="footer__phone">8 (495) 003-88-81</a>
+                            <a href="mailto:123@gmail.com">BirkaMarket@yandex.ru</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mobile-footer__lists">
+                    <div class="footer__production">
+                        <h4 class="footer__list-heading">Продукция</h4>
+                        <ul class="footer__production-list footer__list">
+                            
+                            <li class="footer__production-list__item"><a href="./pages/satin.html" class="footer__production-link">Сатин</a></li>
+                            <li class="footer__production-list__item"><a href="./pages/cotton.html" class="footer__production-link">Хлопок</a></li>
+                            <li class="footer__production-list__item"><a href="./pages/karton.html" class="footer__production-link">Картон</a></li>
+                            <li class="footer__production-list__item"><a href="./pages/silicon.html" class="footer__production-link">Силикон</a></li>
+                            <li class="footer__production-list__item"><a href="./pages/neylon.html" class="footer__production-link">Нейлон</a></li>
+                            <li class="footer__production-list__item"><a href="./pages/zhakkard.html" class="footer__production-link">Жаккард</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__nav">
+                        <h4 class="footer__list-heading">Навигация</h4>
+                        <ul class="footer__nav-list footer__list">
+                            <li class="footer__nav-list__item"><a href="./pages/delivery.html" class="footer__nav-link">Доставка</a></li>
+                            <li class="footer__nav-list__item"><a href="./pages/contacts.html" class="footer__nav-link">Контакты</a></li>
+                        </ul>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+        <div class="additional-footer">
+            <div class="container">
+                <div class="copyright-policy">
+                    <p>© Birka Market 2024</p>
+                    <a href="./pages/privacy.html">Политика конфиденциальности</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/validation.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/swiper.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

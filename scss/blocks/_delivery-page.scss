@@ -1,0 +1,43 @@
+.delivery__options-list {
+    display: flex;
+    gap: 24px;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        gap: 16px;
+    }
+}
+.delivery__options-list__item {
+    display: flex;
+    gap: 20px;
+
+    align-items: start;
+
+    max-width: 377px;
+}
+
+.delivery__options-info {
+
+    .delivery__options-heading {
+        font-weight: 700;
+        font-size: 20px;
+    }
+}
+
+.delivery__companies-list {
+    display: flex;
+
+    justify-content: space-between;
+
+    padding-top: 30px;
+    padding-bottom: 48px;
+
+    align-items: center;
+
+    @media (max-width: 768px) {
+        flex-wrap: wrap;
+        gap: 9px;
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+}

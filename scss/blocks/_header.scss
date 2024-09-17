@@ -1,0 +1,14 @@
+.header__page {
+    display: flex;
+    font-size: 12px;
+
+    a {
+        color: var(--header-page-color);
+        
+
+        &:hover {
+            color: var(--main-font-color);
+            transition: 0.2s ease-in;
+        }
+    }
+}

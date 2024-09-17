@@ -1,0 +1,50 @@
+.custom-checkbox {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    margin-right: 8px;
+    border: 2px solid var(--calculator-border-color);
+    vertical-align: sub;
+    // background-color: black;
+
+    position: relative;
+
+
+    &::before {
+        content: "";
+
+        display: inline-block;
+        width: 13px;
+        height: 13px;
+        
+        background-image: url(./../../img/icons/Done.svg);
+        background-size: contain;
+
+
+
+        position: absolute;
+        left: 50%;
+        top: 50%;
+
+        transform: translate(-50%, -50%) scale(0);
+
+
+        transition: 0.2s ease-in;
+    }
+}
+.real-checkbox {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+}
+.real-checkbox:checked + .custom-checkbox::before {
+    transform: translate(-50%, -50%) scale(1);
+
+}
+.real-checkbox:checked + .custom-checkbox {
+    background-color: var(--aqua-color);
+    border: none;
+}

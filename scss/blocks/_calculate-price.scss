@@ -1,0 +1,169 @@
+.calculate-price {
+    // padding-bottom: 100px;
+
+    select, input {
+        border-bottom: 1px solid var(--calculator-border-color);
+
+        padding-bottom: 10px;
+        
+    }
+    @media (max-width: 768px) {
+        padding: 32px 0;
+    }
+}
+
+.calculate-price__inputs {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 24px;
+
+    select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        padding-right: 60px;
+
+        position: relative;
+        outline: none;
+        cursor: pointer;
+
+        &::after {
+           
+        }
+    }
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        gap: 15px;
+        margin-bottom: 12px;
+
+        select {
+            width: 100%;
+        }
+    }
+}
+.select__wrapper {
+    position: relative;
+
+    select {
+        color: var(--calculator-font-color);
+        line-height: 143%;
+        letter-spacing: -0.02em;
+    }
+}
+.select__wrapper::before {
+    content: url(./../../img/icons/select-open.svg);
+    position: absolute;
+    /* top: 50%; */
+    right: 15px;
+    transform: translate(50%, -10);
+
+    display: block;
+    width: 10px;
+    height: 10px;
+    /* background-color: red; */
+
+    pointer-events: none;
+}
+.calculate-price__submit {
+    font-size: 20px;
+    font-weight: 700;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 98px;
+
+    @media (max-width: 768px) {
+        width: 100%;
+}
+
+    button {
+       font-weight: 500;
+       padding: 20px 24px;
+       background-color: var(--aqua-color);
+       border-radius: 10px;
+       color: var(--white-font-color);
+
+       &:hover {
+        background-color: var(--aqua-color-hover);
+        transition: 0.2s ease-in;
+       }
+
+
+       @media (max-width: 768px) {
+            margin-bottom: 10px;
+            width: 100%;
+    }
+    }
+}
+.calculate-price__inputs-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+.calucalate-price__second-layer {
+    display: flex;
+    align-items: center;
+
+    justify-content: space-between;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        gap: 15px;
+        align-items: start;
+
+        select {
+            width: 100%;
+        }
+    }
+}
+.calculate-price__input-tel {
+    width: 30%;
+
+    input {
+        width: 100%;
+    }
+
+    @media (max-width: 768px) {
+        width: 100%;
+    }
+}
+.calculate-price__input-tel__zhakkard {
+
+    input {
+        width: 100%;
+    }
+
+    @media (max-width: 768px) {
+        width: 100%;
+    }
+}
+.calculate-price__input-comment {
+    width: 40%;
+
+    input {
+        width: 100%;
+    }
+    @media (max-width: 768px) {
+        width: 100%;
+    }
+}
+.calculate-price__validation {
+    // display: flex;
+    gap: 8px; 
+
+    a {
+        color: var(--aqua-color);
+    }
+}
+.calculate-price__quantity {
+    input {
+        width: 100%;
+    }
+    @media (max-width: 768px) {
+        width: 100%;
+    }
+}

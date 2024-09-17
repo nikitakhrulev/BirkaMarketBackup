@@ -1,0 +1,29 @@
+.mobile-production {
+    position: relative;
+    align-items: center;
+    display: inline-block;
+    // &::after {
+    //     top: 0;
+    //     left: 20%;
+    //     content: url('./../../img/icons/small-chevron-down.svg');
+    //     position: absolute;
+    //     transform: translate(100%, 10%)
+    // }
+}
+.mobile-nav__list {
+    display: grid;
+    gap: 24px;
+}
+.mobile-production__list {
+    display: grid;
+    gap: 10px;
+    padding-top: 20px;
+}
+.mobile-production__item {
+    padding-left: 24px;
+}
+.production-dropdown {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}

@@ -1,0 +1,20 @@
+.success_msg {
+    padding: 200px 0;
+    height: 80vh;
+    text-align: center;
+
+
+    img {
+        margin-bottom: 20px;
+    }
+
+    .redirect__thank, .redirect__promise {
+        font-size: 24px;
+        margin-bottom: 20px;
+
+
+        @media (max-width: 768px) {
+            font-size: 18px;
+        }
+    }
+}

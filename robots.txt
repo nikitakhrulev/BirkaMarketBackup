@@ -1,0 +1,8 @@
+User-agent: Yandex
+Disallow: /secret/
+
+User-agent: *
+Allow: /
+Disallow: /*_escaped_fragment_=*
+
+Sitemap: https://birka-market.ru/sitemap.xml

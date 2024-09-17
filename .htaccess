@@ -1,0 +1,19 @@
+RewriteEngine on
+RewriteBase /
+
+# Redirect www to non-www
+RewriteCond %{HTTP_HOST} ^www\.birka-market\.ru [NC]
+RewriteRule ^(.*)$ https://birka-market.ru/$1 [L,R=301]
+
+# Redirect requests for .html to without .html
+RewriteCond %{THE_REQUEST} \ /(.+)\.html
+RewriteRule ^(.+)\.html$ /$1 [R=301,L]
+
+# Internally map requests without .html to .html files
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.+)$ $1.html [L]
+
+# Redirect /index or /index.html to /
+RewriteRule ^index(\.html)?$ / [R=301,L]
+

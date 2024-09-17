@@ -1,0 +1,33 @@
+.price-table {
+    @media (max-width: 768px) {
+        padding-bottom: 32px;
+    }
+}
+
+.price {
+    margin-bottom: 50px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    
+    margin-bottom: 88px; 
+
+    @media (max-width: 768px) {
+        margin-bottom: 0;
+    }
+}
+th {
+    padding-bottom: 16px;
+}
+td {
+    border: 1px solid var(--price-table-color);
+    padding: 16px;
+    text-align: center;
+}
+td:first-child {
+    border-left: none;
+}
+td:last-child {
+    border-right: none;
+}

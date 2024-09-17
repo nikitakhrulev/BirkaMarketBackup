@@ -1,0 +1,38 @@
+.catalog-page {
+    padding: 60px 0;
+
+    @media (max-width: 768px) {
+        padding: 32px 0;
+    }
+}
+
+.catalog__menu-columns {
+    display: flex;
+    gap: 80px;
+
+    @media (max-width: 768px) {
+        gap: 8px;
+    }
+}
+.catalog__column {
+    display: grid;
+    gap: 48px;
+
+    @media (max-width: 768px) {
+        gap: 24px;
+    }
+}
+.catalog__column-item {
+    a {
+        color: var(--main-font-color);
+        img {
+            max-width: 100%;
+            border-radius: 12px;
+            &:hover {
+                opacity: 0.7;
+                transition: 0.2s ease-in;
+            }
+        }
+    }
+
+}
